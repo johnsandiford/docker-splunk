@@ -38,7 +38,7 @@ elif [ "$1" = 'start-service' ]; then
 
   if [[ $__license_ok == "false" ]]; then
     cat << EOF
-Splunk Enterprise
+Splunk Light
 ==============
 
   Available Options:
@@ -51,8 +51,8 @@ Splunk Enterprise
 
   Usage:
 
-    docker run -it outcoldman/splunk:latest
-    docker run --env SPLUNK_START_ARGS="--accept-license" outcoldman/splunk:latest
+    docker run -it outcoldman/splunk:latest-light
+    docker run --env SPLUNK_START_ARGS="--accept-license" outcoldman/splunk:latest-light
 
 EOF
     exit 1
