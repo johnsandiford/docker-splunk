@@ -1,43 +1,42 @@
-# Table of Contents
+# Welcome to the Splunk Docker GitHub repository
 
-- [Supported tags](#supported-tags)
-- [Introduction](#introduction)
-    - [Version](#version)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Configuration](#configuration)
-    - [Data Store](#data-store)
-    - [User](#user)
-    - [Ports](#ports)
-    - [Entrypoint](#entrypoint)
-    - [Hostname](#hostname)
-    - [Basic configuration using Environment Variables](#basic-configuration-using-environment-variables)
-        - [Example](#example)
-- [Upgrade from previous version](#upgrade-from-previous-version)
+This is the official repository for the Splunk Enterprise and Splunk universal forwarder Docker effort. It contains Dockerfiles that you can use to build [Splunk](https://splunk.com) Docker images.
 
-## Supported tags
+To learn more about the Splunk Enterprise Docker image, see the [Splunk Enterprise Docker image README](https://github.com/splunk/docker-splunk/blob/master/enterprise/README.md).
 
-Current branch:
+To learn more about the Splunk universal forwarder image, see the [Splunk universal forwarder Docker image README](https://github.com/splunk/docker-splunk/blob/master/universalforwarder/README.md).
 
+<<<<<<< HEAD
 * `6.5`, `6.5.0`, `latest` - Splunk Enterprise
 * `6.5-light`, `6.5.0-light`, `latest-light` - Splunk Light
 * `6.5-forwarder`, `6.5.0-forwarder`, `latest-forwarder` - Splunk Universal Forwarder
+=======
+# What is Splunk Enterprise?
+>>>>>>> splunk/master
 
-For previous versions or newest releases see other branches.
+Splunk Enterprise is the platform for operational intelligence. The software lets you collect, analyze, and act upon the untapped value of big data that your technology infrastructure, security systems, and business applications generate. It gives you insights to drive operational performance and business results.
 
-## Introduction
+# Get help and support
 
+<<<<<<< HEAD
 > NOTE: I'm working at Splunk, but this is not an official Splunk images.
 > I build them in my free time when I'm not at work. I have some knowledge
 > about Splunk, but you should think twice before putting them in
 > production. I run these images on my own home server just for
 > my personal needs. If you have any issues - feel free to open a
 > [bug](https://github.com/johnsandiford/docker-splunk/issues).
+=======
+More information about the Docker images and how to pull and run them is available in the README for each image.
+>>>>>>> splunk/master
 
-Dockerfiles to build [Splunk](https://splunk.com) including Enterpise, Light and Universal Forwarder.
+If you have questions or need support, you can:
 
-> Examples below show you how to pull and start Splunk Enterprise. If you want to use Splunk Light or Universal Forwarder - you just need to change tags to add `-light` or `-forwarder` and use `splunklight` and `universalforwarder` folders.
+* Post a question to [Splunk Answers](http://answers.splunk.com)
+* Join the [Splunk Slack channel](http://splunk-usergroups.slack.com)
+* Visit the #splunk channel on [EFNet Internet Relay Chat](http://www.efnet.org)
+* Send an email to [docker-maint@splunk.com](mailto:docker-maint@splunk.com)
 
+<<<<<<< HEAD
 ### Version
 
 * Version: `6.5.0`
@@ -245,3 +244,5 @@ docker rm -v splunk
 # Start Splunk Enterprise container with new version
 docker run --hostname splunk --name splunk --volumes-from=vsplunk -p 8000:8000 -d --env SPLUNK_START_ARGS="--accept-license --answer-yes --no-prompt" johnsandiford/splunk:6.5.0
 ```
+=======
+>>>>>>> splunk/master
